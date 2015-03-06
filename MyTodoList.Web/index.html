@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html ng-app="notesModule" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo: AngularJS, WebAPI, SignalR and Cordova</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/spinner.css" rel="stylesheet" />
+    <link href="/css/site.css" rel="stylesheet" />
+
+    <script src="/scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+
+    <!--Header-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <h3 class="col col-md-8" style="color: white;">
+                    Angular JS - WebAPI and SignalR demo
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content" style="margin-top: 40px">
+
+        <!--AngularJS region-->
+        <div class="row">
+            <div ui-view="main">
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="navbar navbar-fixed-bottom">
+            <footer id="footer">
+                <p style="color: white">
+                    Juan Carlos Sanchez &copy; 2015 -
+                    <a href="http://www.softwarejuancarlos.com" target="_blank">http://www.softwarejuancarlos.com</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="/scripts/jquery-1.10.2.js"></script>
+
+    <script src="/scripts/angular.js"></script>
+    <script src="/scripts/angular-sanitize.js"></script>
+    <script src="/scripts/angular-resource.js"></script>
+    <script src="/scripts/angular-animate.js"></script>
+    <script src="/scripts/angular-cookies.js"></script>
+    <script src="/scripts/angular-ui-router.js"></script>
+    <script src="/scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/respond.js"></script>
+
+    <script src="/scripts/jquery.signalR-2.2.0.js"></script>
+
+    <script src="/scripts/underscore.js"></script>
+    <script src="/app/globals.js"></script>
+    <script src="/app/notes.module.js"></script>
+    <script src="/app/notes/notes.controller.js"></script>
+    <script src="/app/notes/notes.service.js"></script>
+
+</body>
+</html>
